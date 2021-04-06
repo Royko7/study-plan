@@ -1,0 +1,25 @@
+<h1>My lovely twig template.</h1>
+<p>You passed this text: <b>{{ variable1 }}</b></p>
+<p>You passed this number value: {{ variable2 }}</p>
+<p>And you passed this array:</p>
+
+<ul>
+  {% for item in variable3 %}
+    <li>
+       {{ item }}
+    </li>
+  {% endfor %}
+</ul>
+
+<p>Ciao!</p>
+
+<a class="btn" href="#" onclick="myModule_ajax_load()">Ajax Test</a>
+
+
+<div id="ajax-target">Ajax goes here!!!</div>
+<script>
+function myModule_ajax_load() {
+  jQuery("#ajax-target").load("/node/get/ajax/11");
+}
+</script>
+

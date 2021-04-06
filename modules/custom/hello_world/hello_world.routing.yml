@@ -1,0 +1,24 @@
+hello_world.first_page:
+  path: '/first-page'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\FirstPageController::content'
+    _title: 'Hello World!'
+  requirements:
+    _permission: 'access content'
+
+hello_world.form:
+  path: '/form'
+  defaults:
+    _form: '\Drupal\hello_world\Form\HelloForm'
+    _title: 'Hello World!'
+  requirements:
+    _permission: 'access content'
+
+hello_world.ajax:
+  path: '/aj'
+  defaults:
+    _form: '\Drupal\hello_world\Form\Aja'
+    _title: 'Hello World!'
+  requirements:
+    _permission: 'access content'
+
